@@ -1,4 +1,4 @@
-# RandomAdviceGenerator
+# RandomAdviceGenerator <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="50" height="50"/> </a> </p>
 Simple Advice Generator with the Advice Contextual Image
 
 - This advice Generator first fetches the Advice from **https://api.adviceslip.com/advice** API
