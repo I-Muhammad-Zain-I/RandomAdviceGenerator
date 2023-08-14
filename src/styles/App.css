@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0),rgb(121, 156, 255) );
+}
+
+
+.bg-overlay {
+    max-width: 900px;
+    width: 70%;
+    height: 100vh;
+    /* background: linear-gradient(rgba(0,0,0, 0.3),rgba(0,0,0, 0.3) )); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.advice__card {
+  
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    height: 20%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    box-shadow: 5px 5px  black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.advice__image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: solid;
+    outline-offset: 0.5rem;
+}
+.advice__title {
+    font-weight: 400;
+    text-align: center;
+}
+.button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+   padding: 8px;
+    opacity: 1;
+    background-color: #fff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+}
+.button span {
+    color: #164ca7;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+.button:hover {
+    animation: rotate 0.7s ease-in-out both;
+}
+.button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.6s;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+    
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  } 
+
+  @media only screen and (max-width: 600px) {
+    .advice__card {
+        width: 80%;
+        height: 200px;
+        font-size: 10px;
+    }
+  }
